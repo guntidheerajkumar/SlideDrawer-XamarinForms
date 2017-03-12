@@ -72,6 +72,7 @@ public partial class MyView : ContentView
 
 		private static void DefaultHeightChanged(BindableObject bindable, double oldValue, double newValue)
 		{
+			(bindable as MyView).IsVisible = false;
 			(bindable as MyView).TranslationY = newValue;
 		}
 
