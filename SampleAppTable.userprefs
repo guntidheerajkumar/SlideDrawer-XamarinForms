@@ -1,19 +1,14 @@
-﻿<Properties StartupConfiguration="{4F6C901E-7E97-4634-8E45-EC3035C1BC84}|Default">
-  <MonoDevelop.Ide.Workbench>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="SampleAppTable" expanded="True">
-            <Node name="SampleAppTable" expanded="True">
-              <Node name="MyPage.xaml" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
+﻿<Properties StartupConfiguration="{4F6C901E-7E97-4634-8E45-EC3035C1BC84}|Default" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SlideDrawer-XamarinForms Status">
+    <Files>
+      <File FileName="SampleAppTable/MyPage.xaml" Line="18" Column="15" />
+      <File FileName="SampleAppTable/MyView.xaml" Line="29" Column="41" />
+      <File FileName="SampleAppTable/MyView.xaml.cs" Line="85" Column="1" />
+      <File FileName="SlideDrawer-XamarinForms Status" />
+    </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.SampleAppTable.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.ItemProperties.SampleAppTable.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C46FE99E-05CC-4FAB-A6E7-38F2F4D3A288" />
+  <MonoDevelop.Ide.ItemProperties.SampleAppTable.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.ADCADF44-AD9E-45C2-9BEB-A1B086CC3B08" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

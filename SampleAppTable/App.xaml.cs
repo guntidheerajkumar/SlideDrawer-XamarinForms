@@ -11,6 +11,9 @@ namespace SampleAppTable
 {
 	public partial class App : Application
 	{
+		public static double Height { get; set; }
+		public static double Width { get; set; }
+
 		public App()
 		{
 			InitializeComponent();

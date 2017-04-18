@@ -21,6 +21,8 @@ namespace SampleAppTable.iOS
 		{
 			global::Xamarin.Forms.Forms.Init();
 
+			App.Height = UIScreen.MainScreen.Bounds.Height;
+			App.Width = UIScreen.MainScreen.Bounds.Width;
 			LoadApplication(new App());
 
 			return base.FinishedLaunching(app, options);

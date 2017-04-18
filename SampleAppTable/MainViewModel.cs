@@ -11,6 +11,7 @@ namespace SampleAppTable
 		public ICommand TappedCommand { get; set; }
 		public ICommand SlideOpenCommand { get; set; }
 		public double DefaultHeight { get; set; }
+		public double DefaultWidth { get; set; }
 
 		public bool IsSlide { get; set; }
 
@@ -18,7 +19,8 @@ namespace SampleAppTable
 		{
 			TappedCommand = new Command(CloseMenu);
 			SlideOpenCommand = new Command(SlideOpen);
-			DefaultHeight = App.Current.MainPage.Height;
+			DefaultHeight = App.Height;
+			DefaultWidth = App.Width;
 			IsSlide = false;
 		}
 

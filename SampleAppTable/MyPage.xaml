@@ -4,15 +4,15 @@
              xmlns:controls="clr-namespace:SampleAppTable;assemnly=SampleAppTable"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout.GestureRecognizers>
-                <TapGestureRecognizer Command="{Binding TappedCommand}" />
-            </StackLayout.GestureRecognizers>
-            <Button HorizontalOptions="Center"
-                    VerticalOptions="Center"
-                    Command="{Binding SlideOpenCommand}"
-                    Text="Open Menu" />
-			<controls:MyView x:Name="MyLayout" DefaultHeight="{Binding DefaultHeight}" IsSlideOpen="{Binding IsSlide}" />
-        </StackLayout>
+        <RelativeLayout>
+            <Button Command="{Binding SlideOpenCommand}" Text="Click Me"/>
+			<controls:MyView x:Name="MyLayout" DefaultHeight="{Binding DefaultHeight}" IsSlideOpen="{Binding IsSlide}">
+				<controls:MyView.ItemTemplate>
+					<StackLayout BackgroundColor="White" Padding="50">
+						<Label Text="Sample Text"/>
+					</StackLayout>
+				</controls:MyView.ItemTemplate>
+			</controls:MyView>
+        </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>

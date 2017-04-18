@@ -19,7 +19,8 @@ namespace SampleAppTable.Droid
 			ToolbarResource = Resource.Layout.Toolbar;
 
 			base.OnCreate(bundle);
-
+			App.Width = Resources.DisplayMetrics.WidthPixels / Resources.DisplayMetrics.Density;
+			App.Height = Resources.DisplayMetrics.HeightPixels / Resources.DisplayMetrics.Density;
 			global::Xamarin.Forms.Forms.Init(this, bundle);
 
 			LoadApplication(new App());
