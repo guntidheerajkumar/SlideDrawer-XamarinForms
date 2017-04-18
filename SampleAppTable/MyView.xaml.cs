@@ -12,7 +12,9 @@ namespace SampleAppTable
 		public MyView()
 		{
 			InitializeComponent();
-			CloseButton.Command = CloseTappedCommand;
+			var gestureRecognizer = new TapGestureRecognizer();
+			gestureRecognizer.Command = CloseTappedCommand;
+			CloseStack.GestureRecognizers.Add(gestureRecognizer);
 		}
 
 		public static readonly BindableProperty IsSlideOpenProperty =
